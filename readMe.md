@@ -1,1 +1,1 @@
-This is a professional portfolio of myself, Divan De Bruin.
+This is a professional portfolio of myself, created by Divan De Bruin.
