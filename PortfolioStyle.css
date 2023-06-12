@@ -181,6 +181,7 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    place-items: center;
 }
 .work{
     border-radius: 10px;
@@ -192,6 +193,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+
 }
 .layer{
     width: 100%;
