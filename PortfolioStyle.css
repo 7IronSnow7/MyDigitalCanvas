@@ -11,12 +11,15 @@ body{
     background: #0d0d0d;
     color: #f0e5e5;
 }
-#header{
+#myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
     width: 100%;
-    height: 100vh;
-    background-image: url(Images/IronMan.jpg);
-    background-size: cover;
+    height: 100%;
+    object-fit: cover;
     background-position: center;
+    z-index: -1;
 }
 .container{
     padding:10px 10%;
@@ -59,21 +62,33 @@ nav ul li a:hover::after{
     width:100%;
 }
 .header-text{
-    margin-top: 20%;
+    margin-top: 15%;
     font-size: 30px;
 }
 .header-text h1{
     font-size: 60px;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 .header-text h1 span{
-    color:#ff004f;
+    color: #322460;
 }
 /*----------------about----------------*/
 #about{
     padding: 80px 0;
-    color: #ababab;
+    color: #fff;
     text-align: justify;
+    position: relative;
+}
+#about::before{
+    content: ""; /*pseudo element needs to be populated at all times.*/
+    position: absolute;
+    top: 9%;
+    left: 41%;
+    width: 50%;
+    height: 51%;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 20px 20px 20px 20px;
+    z-index: -1; /*Z index ensures the background is behind the text*/
 }
 .row{
     display: flex; /*Flex allows contents to be side by side*/
