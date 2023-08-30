@@ -52,7 +52,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #111010;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -79,16 +79,10 @@ nav ul li a:hover::after{
     text-align: justify;
     position: relative;
 }
-#about::before{
-    content: ""; /*pseudo element needs to be populated at all times.*/
-    position: absolute;
-    top: 9%;
-    left: 41%;
-    width: 50%;
-    height: 51%;
-    background-color: rgba(0,0,0,0.7);
-    border-radius: 20px 20px 20px 20px;
-    z-index: -1; /*Z index ensures the background is behind the text*/
+.about-content{ /*Transparent black background for About Me. Creates easier readability*/
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 20px; /* Add padding as needed */
 }
 .row{
     display: flex; /*Flex allows contents to be side by side*/
@@ -126,7 +120,7 @@ nav ul li a:hover::after{
     content:'';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #111010;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -140,7 +134,9 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #b54769;
+    color: #0b0b0b;
+    background-color: #fff;
+    border-radius: 2px 2px 2px 2px;
     font-size: 14px;
 }
 .tab-contents{
@@ -213,7 +209,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0%;
-    background:linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background:linear-gradient(rgba(0,0,0,0.6), #322460);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -234,9 +230,9 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: #322460;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 40px;
     line-height: 60px;
     background: #fff;
     width: 60px;
