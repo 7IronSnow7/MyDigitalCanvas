@@ -25,11 +25,11 @@
             </nav>
             <div class="header-text">
                 <p>Junior Software Developer</p>
-                <h1>Hi, I am <span>Divan</span> De Bruin<br> from South Africa</h1>
+                <h1>Hi, I am <span id="glowing-name">Divan</span> De Bruin<br> from South Africa</h1>
             </div>
         </div>
         <!-- Animated Background Image -->
-        <video autoplay controls muted loop id="myVideo">
+        <video autoplay muted loop id="myVideo">
             <source src="Images/purple-moonlight-sky-cliff-moewalls-com.mp4" type="video/mp4">
         </video>
     </div>
@@ -80,28 +80,48 @@
                 </div>
             </div>
         </div>
-    <!-------------Services--------------------->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Developer</h2>
-                    <p>Add description</p>
-                    <a href="#">Learn more</a>
+    <!-------------Web Applications--------------------->
+    <div id="applications">
+        <h1 class="sub-title">Applications</h1>
+        <div class="applications-container">
+            <!-- <h2 class="weather-heading">Weather Application</h2> -->
+            <div class="app-container">
+                
+                <!-- Weather Application -->
+                <div class="search-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" placeholder="Enter your location">
+                    <button class="fa-solid fa-magnifying-glass"></button>
                 </div>
-                <div>
-                    <i class="fa-solid fa-dumbbell"></i>
-                    <h2>App</h2>
-                    <p>Add description</p>
-                    <a href="#">Learn more</a>
+            
+
+            <!-- Notifying user, location not found -->
+            <div class="not-found">
+                <img src="Images/404-NotFound.png">
+                <p>Invalid location :X</p>
+            </div>
+
+            <div class="weather-box">
+                <img src="">
+                <p class="tempreature"></p>
+                <p class="description"></p>
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity">
+                        <i class="fa-solid fa-water"></i>
+                        <div class="text">
+                            <span></span>
+                            <p>Humidity</p>
+                        </div>
                 </div>
-                <div>
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h2>Mobile Developer</h2>
-                    <p>Add description</p>
-                    <a href="#">Learn more</a>
+                    <div class="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <div class="text">
+                            <span></span>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -158,7 +178,7 @@
                         <a href="https://github.com/7IronSnow7"><i class="fa-brands fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/divan-de-bruin-57252a116/"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <a href="Images/Divan De Bruin.pdf" download class="btn btn2">Download CV</a>
+                    <a href="https://drive.google.com/file/d/1MesOeteDaLNDkwW8q32_h_Q9p1-F6Zxu/view?usp=sharing" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">

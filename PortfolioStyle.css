@@ -76,8 +76,23 @@ nav ul li a:hover{
     font-size: 60px;
     margin-top: 5px;
 }
+@keyframes glow{
+    0% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Initial shadow */
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.9); /* Midpoint shadow */
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Final shadow */
+    }
+}
+#glowing-name{
+    animation: glow 2s infinite;
+}
 .header-text h1 span{
-    color: #494d54;
+    color: #808488;
+    animation: glow 2s infinite;
 }
 /*----------------about----------------*/
 #about{
@@ -152,44 +167,167 @@ nav ul li a:hover{
 .tab-contents.active-tab{
     display: block;
 }
-/*--------------------services-------------------*/
-#services{
-    padding: 30px 0;
+/*--------------------web applications-------------------*/
+#applications h1.sub-title{
+    padding: 50px 50px;
 }
-.services-list{ /*Transforms images into grid format*/
+.applications-container{ /* Purely for centering the webapplication  */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    place-items: center;
 }
-.services-list div{
-    background: #2340B8;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
+.app-container{
+    position: relative;
+    padding: 28px 32px;
+    width: 400px;
+    height: 105px;
+    background: #361052;
+    overflow: hidden;
+    border-radius: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.6s ease-out;
 }
-.services-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-.services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-.services-list div a{
-    text-decoration: none;
+#weather-heading{
+    padding: 50px 50px;
     color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
 }
-.services-list div:hover{
-    background: #ff004f;
-    transform: translateY(-10px);
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+.search-box input{
+    color: #000;
+    width: 80%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
+}
+.search-box input::placeholder{
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    text-transform: capitalize;
+}
+.search-box button{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: #000;
+    background: #dff6ff;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: 0.4s ease;
+}
+
+.search-box button:hover{
+    color:#fff;
+    background: #494d54;
+}
+.search-box i{
+    position: absolute;
+    color: #494d54;
+    font-size: 28px;
+}
+.weather-box{
+    text-align: center;
+}
+.weather-box img{
+    width: 60%;
+    margin-top: 30px;
+}
+.weather-box .tempreature{
+    position: relative;
+    color: #abadb0;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16px;
+}
+.weather-box .tempreature span{
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+}
+.weather-box .description{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.weather-details .humidity, .weather-details .wind{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+}
+.weather-details .humidity{
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+.weather-details .wind{
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+.weather-details i{
+    color: #fff;
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+.weather-details span{
+    color: #abadb0;
+    font-size: 22px;
+    font-weight: 500;
+}
+.weather-details p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+.not-found{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+.not-found img{
+    width: 70%;
+}
+.not-found p{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+.weather-box, .weather-details{
+    scale: 0;
+    opacity: 0;
+}
+.fadeIn{
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+@keyframes fadeIn{
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}
+
 /*---------portfolio------------*/
 #portfolio{
     padding: 50px 0; /*This padding is creating space around the text "My Work"*/
