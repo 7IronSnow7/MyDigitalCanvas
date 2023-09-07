@@ -565,6 +565,12 @@ nav .fa-solid{
 }
 
 @media only screen and (max-width: 600px){
+    #video{
+        display: none;
+    }
+    #gif{
+        display: none;
+    }
     .header-text{
         margin-top: 100%;
         font-size: 16px;
