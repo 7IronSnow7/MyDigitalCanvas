@@ -169,7 +169,7 @@ nav ul li a:hover{
 }
 /*--------------------web applications-------------------*/
 #applications h1.sub-title{
-    padding: 50px 50px;
+    padding: 0 50px;
 }
 .applications-container{ /* Purely for centering the webapplication  */
     display: grid;
