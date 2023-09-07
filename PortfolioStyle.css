@@ -568,10 +568,9 @@ nav .fa-solid{
     #video{
         display: none;
     }
-
-    #poster{
+    /* #poster{
         display: none;
-    }
+    } */
     .header-text{
         margin-top: 100%;
         font-size: 16px;
