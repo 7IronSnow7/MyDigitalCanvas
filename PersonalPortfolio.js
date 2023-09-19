@@ -61,6 +61,7 @@ search.addEventListener('click', () =>{
     .then(response => response.json())
     .then(json => {
 
+        // If the user input doesn't exist, the application will produce 404 error and display an inserted image.
         if(json.cod === '404'){
             container.style.height = '400px';
             weatherBox.style.display = 'none';
