@@ -227,9 +227,14 @@
         <img src="Images/dog-holding-heart-removebg-preview.png" alt="Dog">
     </div>
     <div class="buttons">
-        <button class="yes-button">YES</button>
-        <button class="no-button">NO</button>
+        <button class="yes-button" onclick="showCustomDialog()">YES</button>
+        <button class="no-button" onclick="enLargeYes(event)">NO</button>
     </div>
 
+    <div id="custom-dialog" class="custom-dialog">
+        <p>YAY! I am so happy to be your valentine!</p>
+    </div>
+
+    <script src="PersonalPortfolio.js"></script>
 </body>
 </html>

@@ -119,3 +119,24 @@
 // });
 
 // ------------- VALENTINES-------------------------
+function showCustomDialog(){
+    var dialog = document.getElementById('custom-dialog');
+    dialog.style.display = 'block';
+}
+
+var currentFontSize = 40;
+
+function enLargeYes(event){
+    var yesButton = document.querySelector('.yes-button');
+    var noButton = document.querySelector('.no-button');
+    
+    if(event.target === noButton){
+        currentFontSize += 10;
+        yesButton.style.fontSize = currentFontSize + 'px';
+    }
+}
+    
+
+
+
+
