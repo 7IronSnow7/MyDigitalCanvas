@@ -723,13 +723,16 @@ body {
   }
   body{
     background-image: url(Images/butterflyWallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
   }
 
   .dog {
+    position: relative;
     top: 35%;
-    left: 38%;
-    transform: translateX(-50%, -50%);
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .buttons {
