@@ -658,8 +658,8 @@ body {
 
 .dog{
     position: absolute;
-    top: 60%;
-    left: 70%; /*38*/
+    top: 50%;
+    left: 38%; /*38*/
     transform: translate(-50%, -50%);
     animation: pulse 1.5s infinite alternate;
 }
@@ -731,29 +731,30 @@ body {
 
   .dog {
     position: relative;
-    top: 40%;
-    left: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .buttons {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
   }
 
   .yes-button {
     font-size: 6vw;
-    top: 60%;
-    left: 10%;
+    margin: 0 10px;
   }
 
   .no-button {
     font-size: 4vw;
-    top: 60%;
-    left: 15%;
+    margin: 0 10px;
   }
 
   .custom-dialog {
-    width: 90%;
-    max-width: 100%;
+    width: 80%;
+    max-width: 80%;
     height: auto;
     padding: 10vw;
     font-size: 6vw;
