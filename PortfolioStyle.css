@@ -750,11 +750,14 @@ body {
   }
 
   .custom-dialog {
-    width: 50%;
-    max-width: 50%;
+    width: 80%;
+    max-width: 80%;
     height: auto;
     padding: 10vw;
     font-size: 6vw;
     text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
