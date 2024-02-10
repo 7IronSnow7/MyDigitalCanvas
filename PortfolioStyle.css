@@ -638,15 +638,13 @@ footer .wave#wave4{
     flex-direction: column;
     align-items: center;
 }
-body {
-    /* margin: 0; 
-    padding: 0; 
-    background-color: rgb(255, 192, 255); */
+/* body {
+    
     background-image: url(Images/butterflyLOL.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 .header{
     text-align: center;
     font-size: 6vw;
