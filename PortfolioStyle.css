@@ -715,3 +715,35 @@ body {
     font-family: fantasy;
     color: white;
 }
+
+/*------------------- MOBILE ---------------------------*/
+@media only screen and (max-width: 768px) {
+  .header {
+    font-size: 40px;
+  }
+
+  .dog {
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .buttons {
+    top: calc(50% + 200px);
+  }
+
+  .yes-button {
+    font-size: 30px;
+  }
+
+  .no-button {
+    font-size: 16px;
+  }
+
+  .custom-dialog {
+    width: 80%;
+    height: auto;
+    padding: 30px;
+    font-size: 30px;
+  }
+}
