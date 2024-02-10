@@ -719,7 +719,7 @@ body {
 @media only screen and (max-width: 768px) {
   .header {
     font-size: 8vw;
-    font-family: fantasy;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
   }
   body{
@@ -741,6 +741,8 @@ body {
 
   .yes-button {
     font-size: 6vw;
+    top: 60%;
+    left: 10%;
   }
 
   .no-button {
@@ -751,7 +753,7 @@ body {
 
   .custom-dialog {
     width: 90%;
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
     padding: 10vw;
     font-size: 6vw;
