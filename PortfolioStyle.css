@@ -658,8 +658,8 @@ body {
 
 .dog{
     position: absolute;
-    top: 35%;
-    left: 38%;
+    top: 60%;
+    left: 70%; /*38*/
     transform: translate(-50%, -50%);
     animation: pulse 1.5s infinite alternate;
 }
@@ -731,8 +731,8 @@ body {
 
   .dog {
     position: relative;
-    top: 60%;
-    left: 30%;
+    top: 40%;
+    left: 20%;
   }
 
   .buttons {
@@ -745,11 +745,16 @@ body {
 
   .no-button {
     font-size: 4vw;
+    top: 60%;
+    left: 15%;
   }
 
   .custom-dialog {
     width: 90%;
+    max-width: 90%;
+    height: auto;
     padding: 10vw;
     font-size: 6vw;
+    text-align: center;
   }
 }
