@@ -723,38 +723,35 @@ body {
     font-weight: bold;
   }
   body{
-    background-image: url(Images/butterflyMobile.jpg);
+    background-image: url(Images/bACKROUND.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .dog {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
   .buttons {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 20px;
   }
 
-  .yes-button {
+  .yes-button, .no-button {
+    padding: 10px 20px;
     font-size: 6vw;
     margin: 0 10px;
   }
 
-  .no-button {
-    font-size: 4vw;
-    margin: 0 10px;
-  }
-
   .custom-dialog {
-    width: 80%;
-    max-width: 80%;
+    width: 50%;
+    max-width: 50%;
     height: auto;
     padding: 10vw;
     font-size: 6vw;
