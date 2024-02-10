@@ -730,9 +730,8 @@ body {
 
   .dog {
     position: relative;
-    top: 35%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 60%;
+    left: 30%;
   }
 
   .buttons {
