@@ -220,20 +220,23 @@
         <script src="https://kit.fontawesome.com/4ae5d76a33.js" crossorigin="anonymous"></script>
     </head>
 <body>
-    <div class="header">
-        <p>WILL YOU BE MY VALENTINES?!!!</p>
+    <div class="container">
+        <div class="header">
+            <p>WILL YOU BE MY VALENTINES?!!!</p>
+        </div>
+        <div class="dog">
+            <img src="Images/dog-holding-heart-removebg-preview.png" alt="Dog">
+        </div>
+        <div class="buttons">
+            <button class="yes-button" onclick="showCustomDialog()">YES</button>
+            <button class="no-button" onclick="enLargeYes(event)">NO</button>
+        </div>
+    
+        <div id="custom-dialog" class="custom-dialog">
+            <p>YAY! I am so happy to be your valentine!</p>
+        </div>
     </div>
-    <div class="dog">
-        <img src="Images/dog-holding-heart-removebg-preview.png" alt="Dog">
-    </div>
-    <div class="buttons">
-        <button class="yes-button" onclick="showCustomDialog()">YES</button>
-        <button class="no-button" onclick="enLargeYes(event)">NO</button>
-    </div>
-
-    <div id="custom-dialog" class="custom-dialog">
-        <p>YAY! I am so happy to be your valentine!</p>
-    </div>
+    
 
     <script src="PersonalPortfolio.js"></script>
 </body>
