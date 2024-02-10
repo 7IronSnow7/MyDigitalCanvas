@@ -719,10 +719,11 @@ body {
 @media only screen and (max-width: 768px) {
   .header {
     font-size: 8vw;
-    font-style: normal;
+    font-family: fantasy;
+    font-weight: bold;
   }
   body{
-    background-image: url(Images/butterflyWallpaper.jpg);
+    background-image: url(Images/butterflyMobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
