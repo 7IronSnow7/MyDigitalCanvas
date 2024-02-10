@@ -639,10 +639,10 @@ footer .wave#wave4{
     align-items: center;
 }
 body {
-    margin: 0; 
+    /* margin: 0; 
     padding: 0; 
-    background-color: rgb(255, 192, 255);
-    background-image: url(Images/butterflyWallpaper.jpg);
+    background-color: rgb(255, 192, 255); */
+    background-image: url(Images/butterflyLOL.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -658,7 +658,7 @@ body {
 
 .dog{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 38%; /*38*/
     transform: translate(-50%, -50%);
     animation: pulse 1.5s infinite alternate;
