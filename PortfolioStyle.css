@@ -639,8 +639,10 @@ footer .wave#wave4{
     align-items: center;
 }
 body {
-    
-    background-image: url(Images/butterflyLOL.jpg);
+    margin: 0; 
+    padding: 0; 
+    background-color: rgb(255, 192, 255);
+    background-image: url(Images/butterflyWallpaper.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -656,8 +658,8 @@ body {
 
 .dog{
     position: absolute;
-    top: 40%;
-    left: 38%; /*38*/
+    top: 35%;
+    left: 38%;
     transform: translate(-50%, -50%);
     animation: pulse 1.5s infinite alternate;
 }
@@ -704,6 +706,7 @@ body {
     height: 550px;
     background-image: url(Images/plainRedHeart.png);
     background-size: cover;
+    border-radius: 0%;
     padding: 60px;
     box-sizing: border-box;
     text-align: center;
@@ -716,49 +719,34 @@ body {
 @media only screen and (max-width: 768px) {
   .header {
     font-size: 8vw;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: bold;
+    font-style: normal;
   }
   body{
-    background-image: url(Images/bACKROUND.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url(Images/butterflyWallpaper.jpg);
     background-position: center;
   }
 
   .dog {
-    position: absolute;
-    top: 60%;
-    left: 10%;
-    
+    top: 35%;
+    left: 38%;
+    transform: translateX(-50%, -50%);
   }
 
   .buttons {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 20px;
+    flex-direction: column;
   }
 
-  .yes-button, .no-button {
-    padding: 10px 20px;
+  .yes-button {
     font-size: 6vw;
-    margin: 5px;
+  }
+
+  .no-button {
+    font-size: 4vw;
   }
 
   .custom-dialog {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+    width: 90%;
     padding: 10vw;
     font-size: 6vw;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 }
