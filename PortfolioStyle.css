@@ -730,7 +730,7 @@ footer .wave#wave4{
   .dog {
     position: absolute;
     top: 60%;
-    left: 30%;
+    left: 10%;
     
   }
 
@@ -748,8 +748,8 @@ footer .wave#wave4{
   }
 
   .custom-dialog {
-    width: 80%;
-    max-width: 80%;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     padding: 10vw;
     font-size: 6vw;
@@ -757,5 +757,6 @@ footer .wave#wave4{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 }
