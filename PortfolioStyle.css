@@ -638,13 +638,13 @@ footer .wave#wave4{
     flex-direction: column;
     align-items: center;
 }
-/* body {
+body {
     
     background-image: url(Images/butterflyLOL.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-} */
+}
 .header{
     text-align: center;
     font-size: 6vw;
@@ -695,10 +695,10 @@ footer .wave#wave4{
     }
 }
 .custom-dialog {
-    display: block;
-   margin: auto;
-   margin: auto;
-   width: 50%;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 620px;
     height: 550px;
@@ -756,7 +756,9 @@ footer .wave#wave4{
     padding: 10vw;
     font-size: 6vw;
     text-align: center;
-   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 }
