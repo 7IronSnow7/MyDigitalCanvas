@@ -724,7 +724,7 @@ body {
   }
   body{
     background-image: url(Images/bACKROUND.jpg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
