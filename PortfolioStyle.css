@@ -630,7 +630,7 @@ footer .wave#wave4{
 } */
 
 /*---------------------- VALENTINES --------*/
-.container{
+/* .container{
     max-width: 90%;
     margin: 0 auto;
     padding: 20px;
@@ -664,13 +664,13 @@ body {
 
 .dog{
     position: absolute;
-    top: 35%;
-    left: 38%;
+    top: 40%;
+    left: 25%;
     transform: translate(-50%, -50%);
     animation: pulse 1.5s infinite alternate;
 }
 .dog img{
-    display: block; /* Ensure the image is displayed as a block element */
+    display: block; 
     max-width: 100%; 
     height: auto;
     margin: 0 auto;
@@ -678,11 +678,12 @@ body {
 .buttons{
     text-align: center;
     position: absolute;
-    top: calc(50% + 400px);
+    top: calc(15% + 400px);
     left: 50%;
     transform: translateX(-50%);
 }
 .yes-button{
+
     padding: 10px 20px;
     font-size: 40px;
     margin: 0 10px;
@@ -719,10 +720,10 @@ body {
     font-size: 60px;
     font-family: fantasy;
     color: white;
-}
+} */
 
 /*------------------- MOBILE ---------------------------*/
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   .header {
     font-size: 8vw;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -773,4 +774,125 @@ body {
     transform: translate(-50%, -50%);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
+} */
+
+/* ------------------------------------------Carlas Theme Box --------------------------*/
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #faf7f4;
+    color: #333;
+}
+/*--------------------Main top display with theme Box logo--------------------------------------*/
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 350px;
+    margin-top: 10px;
+}
+/*-------------------------Links -> Home/ Catalog/ Contact------------------------------------------*/
+.container {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 15px 0 0; /* Remove default margin */
+    text-align: center;
+}
+
+nav li {
+    display: inline-block; /* Display list items horizontally */
+    margin: 10px 20px; /* Add some spacing between list items */
+    background-color: #e0c0a8;
+    padding: 8px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    padding: 5px 10px; /* Add padding to make links look like buttons */
+    border: 1px solid #333; /* Add a border for a button-like appearance */
+    border-radius: 5px; /* Add rounded corners */
+    color: #333; /* Set link color */
+    position: relative; /* Add position relative for absolute positioning of the border */
+    bottom: 5px;
+    left: 5px;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    font-family: monospace;
+    color: 	#8B4513;
+}
+/* Hover effect */
+nav li:hover {
+    margin: 10px 15px; /* Adjust spacing on hover to bring everything back into line */
+   padding: 5px 0px;
+   border-radius: 5px;
+}
+
+nav li:hover a {
+    bottom: 0;
+    left: 0;
+}
+
+/* --------------------------------------Landing Page Images ------------------------------------------------*/
+.image-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+.image-container {
+    position: relative;
+    width: 22%;
+    height: 250px;
+    margin-top: 20px;
+    margin-right: 10px; /* Adjust right margin for spacing */
+    overflow: hidden;
+}
+.image-container img {
+    width: 100%;
+    height: 100%; /* Set a fixed height to ensure equal heights */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+.image-container img:hover{
+    transform: scale(1.1);
+}
+.image-container p {
+    position: absolute;
+    bottom: 15px;
+    left: 95px;
+    width: 90;
+    padding: 10px;
+    background-color: rgb(224, 192, 168, 1);
+    text-align: center;
+    margin: 0;
+    z-index: 1; 
+    transition: opactity 0.3s ease;
+}
+.image-container:hover p{
+    opacity: 0.8;
+}
+.image-container a{
+    text-decoration: none;
+    color: #333;
+}
+
+/*--------------------------Footer------------------------------*/
+footer{
+    background-color: #e0c0a8;
+    color: #fff;
+    padding: 40px 20px;
+}
+.container{
+    margin: 0 auto;
+    text-align: center;
+
 }
