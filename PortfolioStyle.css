@@ -886,13 +886,38 @@ nav li:hover a {
 }
 
 /*--------------------------Footer------------------------------*/
-footer{
-    background-color: #e0c0a8;
+/* footer{
+    background-color: #499327;
     color: #fff;
     padding: 40px 20px;
+    margin-top: 80px;
+   
 }
 .container{
+    display: flex;
     margin: 0 auto;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 
+} */
+footer{
+    position: relative;
+    width: 100%;
+    padding: 21px 50px;
+    background: #e0c0a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+footer .copyright{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    z-index: 2;
+    color:#fff;
 }
