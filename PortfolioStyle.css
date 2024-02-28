@@ -904,13 +904,14 @@ nav li:hover a {
 } */
 footer{
     position: relative;
+    top: 80px;
+    bottom: 0;
     width: 100%;
     padding: 21px 50px;
     background: #e0c0a8;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
 }
 footer .copyright{
     position: relative;
@@ -920,4 +921,28 @@ footer .copyright{
     margin: 10px 0;
     z-index: 2;
     color:#fff;
+}
+
+body, html{
+    height: 100%;
+    margin: 0;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex-grow: 1;
+}
+footer{
+    width: 100%;
+    padding: 21px 50px;
+    background: #e0c0a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .copyright{
+    color: #fff;
 }
