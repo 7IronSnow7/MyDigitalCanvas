@@ -131,7 +131,7 @@ nav li:hover a {
 
 } */
 footer{
-    position: relative;
+    position: flex;
     top: 80px;
     bottom: 0;
     width: 100%;
@@ -177,7 +177,17 @@ footer .copyright{
 .social-icons{
     display: flex;
     justify-content: flex-start;
+    margin-top: 30px;
 }
 .social-icons a{
-    margin-right: 10px !important;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #fff;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #000;
+    transform: translateY(-5px);
 }
