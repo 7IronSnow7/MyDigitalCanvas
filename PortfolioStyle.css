@@ -839,6 +839,37 @@ nav li:hover a {
     left: 0;
 }
 
+.slogan{
+    text-align: center;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 50px;
+}
+/* Landing page instruction */
+.instruction{
+    text-align: center;
+}
+.background{
+    display: inline-block; /* Display list items horizontally */
+    background-color: #e0c0a8;
+    border-radius: 10px;
+    height: 60px;
+}
+.background p{
+    padding: 5px 10px; /* Add padding to make links look like buttons */
+    border: 1px solid #333; /* Add a border for a button-like appearance */
+    border-radius: 5px; /* Add rounded corners */
+    color: #333; /* Set link color */
+    position: relative; /* Add position relative for absolute positioning of the border */
+    bottom: 24px;
+    left: 8px;
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: 	#0e0d0d;
+    
+}
+
+
+
 /* --------------------------------------Landing Page Images ------------------------------------------------*/
 .image-grid{
     display: flex;
@@ -852,7 +883,7 @@ nav li:hover a {
     width: 22%;
     height: 250px;
     margin-top: 20px;
-    margin-right: 10px; /* Adjust right margin for spacing */
+    margin-left: 20px;
     overflow: hidden;
 }
 .image-container img {
