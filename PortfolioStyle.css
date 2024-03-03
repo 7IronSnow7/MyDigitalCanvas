@@ -977,3 +977,197 @@ footer{
 footer .copyright{
     color: #fff;
 }
+
+/*-------------------- SMALL SCREEN-----------------------*/
+@media screen and (max-width: 600px) {
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #faf7f4;
+        color: #333;
+    }
+    
+    .logo {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        max-width: 350px;
+        margin-top: 10px;
+    }
+    
+    .container {
+        text-align: center;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 15px 0 0;
+        text-align: center;
+    }
+    
+    nav li {
+        display: inline-block;
+        margin: 10px 20px;
+        background-color: #e0c0a8;
+        padding: 8px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    nav a {
+        text-decoration: none;
+        padding: 5px 10px;
+        border: 1px solid #333;
+        border-radius: 5px;
+        color: #333;
+        position: relative;
+        bottom: 5px;
+        left: 5px;
+        transition: all 0.3s ease;
+        font-size: 18px;
+        font-family: monospace;
+        color: #8B4513;
+    }
+    
+    nav li:hover {
+        margin: 10px 15px;
+        padding: 5px 0px;
+        border-radius: 5px;
+    }
+    
+    nav li:hover a {
+        bottom: 0;
+        left: 0;
+    }
+    
+    .slogan {
+        text-align: center;
+        font-family: Brush Script MT, Brush Script Std, cursive;
+        font-size: 50px;
+    }
+    
+    .instruction {
+        text-align: center;
+    }
+    
+    .background {
+        display: inline-block;
+        background-color: #e0c0a8;
+        border-radius: 10px;
+        height: 60px;
+    }
+    
+    .background p {
+        padding: 5px 10px;
+        border: 1px solid #333;
+        border-radius: 5px;
+        color: #333;
+        position: relative;
+        bottom: 24px;
+        left: 8px;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #0e0d0d;
+    }
+    
+    .image-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    
+    .image-container {
+        position: relative;
+        width: 22%;
+        height: 250px;
+        margin-top: 20px;
+        margin-left: 20px;
+        overflow: hidden;
+    }
+    
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+    }
+    
+    .image-container img:hover {
+        transform: scale(1.1);
+    }
+    
+    .image-container p {
+        position: absolute;
+        bottom: 15px;
+        left: 95px;
+        width: 90;
+        padding: 10px;
+        background-color: rgb(224, 192, 168, 1);
+        text-align: center;
+        margin: 0;
+        z-index: 1;
+        transition: opacity 0.3s ease;
+    }
+    
+    .image-container:hover p {
+        opacity: 0.8;
+    }
+    
+    .image-container a {
+        text-decoration: none;
+        color: #333;
+    }
+    
+    footer {
+        position: relative;
+        top: 80px;
+        bottom: 0;
+        width: 100%;
+        padding: 21px 50px;
+        background: #e0c0a8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer .copyright {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        z-index: 2;
+        color: #fff;
+    }
+    
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+    }
+    
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    main {
+        flex-grow: 1;
+    }
+    
+    footer {
+        width: 100%;
+        padding: 21px 50px;
+        background: #e0c0a8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer .copyright {
+        color: #fff;
+    }
+}
