@@ -1,4 +1,4 @@
-/* *{
+*{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -25,7 +25,7 @@ body{
     padding:10px 10%;
 }
 nav{
-    display: flex; COMMENT This adds the images next to one another 
+    display: flex; /*COMMENT This adds the images next to one another*/ 
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -36,19 +36,19 @@ nav{
 }
 
 nav ul li{
-    display: inline-block; COMMENT horizontally aligns links on the top right 
+    display: inline-block; /*COMMENT horizontally aligns links on the top right*/ 
     list-style: none;
     margin: 10px 20px;
-} */
+}
 
 /* Configuring how manual links look eg:Home, About etc. */
-/* nav ul li a{
+nav ul li a{
     color: #fff;
-    text-decoration: none; COMMENT removes underlining of text or any text add display add ons 
+    text-decoration: none; /*COMMENT removes underlining of text or any text add display add ons*/
     font-size: 22px;
     position: relative;
     transition: font-size 0.5s;
-} COMMENT Hover effect of the links(Home, About etc.) COMMENT
+} /*COMMENT Hover effect of the links(Home, About etc.) COMMENT*/
 nav ul li a:hover{
     animation: pulse 1s infinite;
     color: #494d54;
@@ -78,13 +78,13 @@ nav ul li a:hover{
 }
 @keyframes glow{
     0% {
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); COMMENT Initial shadow 
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /*COMMENT Initial shadow*/ 
     }
     50% {
-        text-shadow: 0 0 20px rgba(255, 255, 255, 0.9); COMMENT Midpoint shadow 
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.9); /*COMMENT Midpoint shadow*/ 
     }
     100% {
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); COMMENT Final shadow 
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /*COMMENT Final shadow*/ 
     }
 }
 #glowing-name{
@@ -93,21 +93,21 @@ nav ul li a:hover{
 .header-text h1 span{
     color: #808488;
     animation: glow 2s infinite;
-} */
+}
 /*----------------about----------------*/
-/* #about{
+#about{
     padding: 80px 0;
     color: #fff;
     text-align: justify;
     position: relative;
 }
-.about-content{ COMMENT Transparent black background for About Me. Creates easier readability 
+.about-content{ /*COMMENT Transparent black background for About Me. Creates easier readability*/ 
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 20px;
-    padding: 20px; COMMENT Add padding as needed 
+    padding: 20px; /*COMMENT Add padding as needed*/ 
 }
 .row{
-    display: flex; COMMENT Flex allows contents to be side by side
+    display: flex; /*COMMENT Flex allows contents to be side by side*/
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -166,12 +166,12 @@ nav ul li a:hover{
 }
 .tab-contents.active-tab{
     display: block;
-} */
+}
 /*--------------------web applications-------------------*/
-/* #applications h1.sub-title{
+#applications h1.sub-title{
     padding: 0 50px;
 }
-.applications-container{ COMMENT Purely for centering the webapplication
+.applications-container{ /*COMMENT Purely for centering the webapplication */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
@@ -326,11 +326,11 @@ nav ul li a:hover{
         scale: 1;
         opacity: 1;
     }
-} */
+}
 
 /*--------- COMMENT portfolio------------*/
- /* #portfolio{
-    padding: 50px 0; COMMENT This padding is creating space around the text "My Work"
+ #portfolio{
+    padding: 50px 0; /*COMMENT This padding is creating space around the text "My Work" */
 }
 .work-list{
     display: grid;
@@ -352,7 +352,7 @@ nav ul li a:hover{
 
 }  */
 /* My Work */
-/* .layer{ 
+.layer{ 
     width: 100%;
     height: 0%;
     background:linear-gradient(rgba(0,0,0,0.6), #494d54);
@@ -420,11 +420,11 @@ nav ul li a:hover{
     100% {
         transform: scale(1);
     }
-} */
+}
 
 /*-------------- COMMENT contact--------------*/
 
-/* .contact-left{
+.contact-left{
     flex-basis: 35%;
 }
 .contact-right{
@@ -557,18 +557,18 @@ footer .wave#wave4{
 }
 .copyright i{
     color: #322460;
-} */
+}
 /*------------ COMMENT css for small screen---------------*/
-/* nav .fa-solid{
+nav .fa-solid{
     display: none;
 }
 
 @media only screen and (max-width: 600px){
     #video{
         display: none;
-    } */
+    } 
 
-    /* .header-text{
+     .header-text{
         margin-top: 100%;
         font-size: 16px;
     }
@@ -627,547 +627,5 @@ footer .wave#wave4{
     color: #61b752;
     margin-top: -40px;
     display: block;
-} */
-
-/*---------------------- VALENTINES --------*/
-/* .container{
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-body {
-    margin: 0; 
-    padding: 0; 
-    background-color: rgb(255, 192, 255);
-    background-image: url(Images/butterflyWallpaper.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.header{
-    text-align: center;
-    font-size: 6vw;
-    font-weight: bold;
-    font-family: cursive;
-    color: crimson;
-    margin-bottom: 30px;
-}
-.center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
 }
 
-.dog{
-    position: absolute;
-    top: 40%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    animation: pulse 1.5s infinite alternate;
-}
-.dog img{
-    display: block; 
-    max-width: 100%; 
-    height: auto;
-    margin: 0 auto;
-}
-.buttons{
-    text-align: center;
-    position: absolute;
-    top: calc(15% + 400px);
-    left: 50%;
-    transform: translateX(-50%);
-}
-.yes-button{
-
-    padding: 10px 20px;
-    font-size: 40px;
-    margin: 0 10px;
-    background-color: green;
-}
-.no-button{
-    padding: 10px 20px;
-    font-size: 20px;
-    margin: 0 10px;
-    background-color:crimson;
-}
-@keyframes pulse{
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(1.2);
-    }
-}
-.custom-dialog {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 620px;
-    height: 550px;
-    background-image: url(Images/plainRedHeart.png);
-    background-size: cover;
-    border-radius: 0%;
-    padding: 60px;
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 60px;
-    font-family: fantasy;
-    color: white;
-} */
-
-/*------------------- MOBILE ---------------------------*/
-/* @media only screen and (max-width: 768px) {
-  .header {
-    font-size: 8vw;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  body{
-    background-image: url(Images/bACKROUND.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .dog {
-    position: absolute;
-    top: 60%;
-    left: 10%;
-    transform: translateX(-50%, -50%);
-  }
-
-  .buttons {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 10px;
-
-  }
-
-  .yes-button {
-    font-size: 6vw;
-  }
-
-  .no-button {
-    font-size: 4vw;
-  }
-
-  .custom-dialog {
-    width: 90%;
-    max-width: 100%;
-    padding: 8vw;
-    font-size: 6vw;
-    height: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  }
-} */
-
-/* ------------------------------------------Carlas Theme Box --------------------------*/
-/* styles.css */
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #faf7f4;
-    color: #333;
-}
-/*--------------------Main top display with theme Box logo--------------------------------------*/
-.logo {
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-    max-width: 350px;
-    margin-top: 10px;
-}
-/*-------------------------Links -> Home/ Catalog/ Contact------------------------------------------*/
-.container {
-    text-align: center;
-}
-
-nav ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
-    margin: 15px 0 0; /* Remove default margin */
-    text-align: center;
-}
-
-nav li {
-    display: inline-block; /* Display list items horizontally */
-    margin: 10px 20px; /* Add some spacing between list items */
-    background-color: #e0c0a8;
-    padding: 8px;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-
-nav a {
-    text-decoration: none; /* Remove underline from links */
-    padding: 5px 10px; /* Add padding to make links look like buttons */
-    border: 1px solid #333; /* Add a border for a button-like appearance */
-    border-radius: 5px; /* Add rounded corners */
-    color: #333; /* Set link color */
-    position: relative; /* Add position relative for absolute positioning of the border */
-    bottom: 5px;
-    left: 5px;
-    transition: all 0.3s ease;
-    font-size: 18px;
-    font-family: monospace;
-    color: 	#8B4513;
-}
-/* Hover effect */
-nav li:hover {
-    margin: 10px 15px; /* Adjust spacing on hover to bring everything back into line */
-   padding: 5px 0px;
-   border-radius: 5px;
-}
-
-nav li:hover a {
-    bottom: 0;
-    left: 0;
-}
-
-.slogan{
-    text-align: center;
-    font-family: Brush Script MT, Brush Script Std, cursive;
-    font-size: 50px;
-}
-/* Landing page instruction */
-.instruction{
-    text-align: center;
-}
-.background{
-    display: inline-block; /* Display list items horizontally */
-    background-color: #e0c0a8;
-    border-radius: 10px;
-    height: 60px;
-}
-.background p{
-    padding: 5px 10px; /* Add padding to make links look like buttons */
-    border: 1px solid #333; /* Add a border for a button-like appearance */
-    border-radius: 5px; /* Add rounded corners */
-    color: #333; /* Set link color */
-    position: relative; /* Add position relative for absolute positioning of the border */
-    bottom: 24px;
-    left: 8px;
-    font-size: 18px;
-    font-family:Arial, Helvetica, sans-serif;
-    color: 	#0e0d0d;
-    
-}
-
-
-
-/* --------------------------------------Landing Page Images ------------------------------------------------*/
-.image-grid{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 20px;
-
-}
-.image-container {
-    position: relative;
-    width: 22%;
-    height: 250px;
-    margin-top: 20px;
-    margin-left: 20px;
-    overflow: hidden;
-}
-.image-container img {
-    width: 100%;
-    height: 100%; /* Set a fixed height to ensure equal heights */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-}
-.image-container img:hover{
-    transform: scale(1.1);
-}
-.image-container p {
-    position: absolute;
-    bottom: 15px;
-    left: 95px;
-    width: 90;
-    padding: 10px;
-    background-color: rgb(224, 192, 168, 1);
-    text-align: center;
-    margin: 0;
-    z-index: 1; 
-    transition: opactity 0.3s ease;
-}
-.image-container:hover p{
-    opacity: 0.8;
-}
-.image-container a{
-    text-decoration: none;
-    color: #333;
-}
-
-/*--------------------------Footer------------------------------*/
-/* footer{
-    background-color: #499327;
-    color: #fff;
-    padding: 40px 20px;
-    margin-top: 80px;
-   
-}
-.container{
-    display: flex;
-    margin: 0 auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-
-} */
-footer{
-    position: relative;
-    top: 80px;
-    bottom: 0;
-    width: 100%;
-    padding: 21px 50px;
-    background: #e0c0a8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-footer .copyright{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-    z-index: 2;
-    color:#fff;
-}
-
-body, html{
-    height: 100%;
-    margin: 0;
-}
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-main{
-    flex-grow: 1;
-}
-footer{
-    width: 100%;
-    padding: 21px 50px;
-    background: #e0c0a8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-footer .copyright{
-    color: #fff;
-}
-
-/*-------------------- SMALL SCREEN-----------------------*/
-@media screen and (max-width: 600px) {
-    body {
-        font-family: 'Arial', sans-serif;
-        background-color: #faf7f4;
-        color: #333;
-    }
-    
-    .logo {
-        display: block;
-        margin: 0 auto;
-        width: 80%;
-        max-width: 350px;
-        margin-top: 10px;
-    }
-    
-    .container {
-        text-align: center;
-    }
-    
-    nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 15px 0 0;
-        text-align: center;
-    }
-    
-    nav li {
-        display: inline-block;
-        margin: 10px 20px;
-        background-color: #e0c0a8;
-        padding: 8px;
-        border-radius: 10px;
-        transition: all 0.3s ease;
-    }
-    
-    nav a {
-        text-decoration: none;
-        padding: 5px 10px;
-        border: 1px solid #333;
-        border-radius: 5px;
-        color: #333;
-        position: relative;
-        bottom: 5px;
-        left: 5px;
-        transition: all 0.3s ease;
-        font-size: 18px;
-        font-family: monospace;
-        color: #8B4513;
-    }
-    
-    nav li:hover {
-        margin: 10px 15px;
-        padding: 5px 0px;
-        border-radius: 5px;
-    }
-    
-    nav li:hover a {
-        bottom: 0;
-        left: 0;
-    }
-    
-    .slogan {
-        text-align: center;
-        font-family: Brush Script MT, Brush Script Std, cursive;
-        font-size: 50px;
-    }
-    
-    .instruction {
-        text-align: center;
-    }
-    
-    .background {
-        display: inline-block;
-        background-color: #e0c0a8;
-        border-radius: 10px;
-        height: 60px;
-    }
-    
-    .background p {
-        padding: 5px 10px;
-        border: 1px solid #333;
-        border-radius: 5px;
-        color: #333;
-        position: relative;
-        bottom: 24px;
-        left: 8px;
-        font-size: 18px;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #0e0d0d;
-    }
-    
-    .image-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 20px;
-    }
-    
-    .image-container {
-        position: relative;
-        width: 22%;
-        height: 250px;
-        margin-top: 20px;
-        margin-left: 20px;
-        overflow: hidden;
-    }
-    
-    .image-container img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 15px;
-        transition: transform 0.3s ease;
-    }
-    
-    .image-container img:hover {
-        transform: scale(1.1);
-    }
-    
-    .image-container p {
-        position: absolute;
-        bottom: 15px;
-        left: 95px;
-        width: 90;
-        padding: 10px;
-        background-color: rgb(224, 192, 168, 1);
-        text-align: center;
-        margin: 0;
-        z-index: 1;
-        transition: opacity 0.3s ease;
-    }
-    
-    .image-container:hover p {
-        opacity: 0.8;
-    }
-    
-    .image-container a {
-        text-decoration: none;
-        color: #333;
-    }
-    
-    footer {
-        position: relative;
-        top: 80px;
-        bottom: 0;
-        width: 100%;
-        padding: 21px 50px;
-        background: #e0c0a8;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    footer .copyright {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 10px 0;
-        z-index: 2;
-        color: #fff;
-    }
-    
-    body,
-    html {
-        height: 100%;
-        margin: 0;
-    }
-    
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-    
-    main {
-        flex-grow: 1;
-    }
-    
-    footer {
-        width: 100%;
-        padding: 21px 50px;
-        background: #e0c0a8;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    footer .copyright {
-        color: #fff;
-    }
-}
