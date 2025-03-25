@@ -20,7 +20,6 @@ This website is my initial step into creating an online presence to showcase my 
 * **Skills:** A clear overview of my technical proficiencies in HTML, CSS and JavaScript.
 * **Experience:** Details about my professional history, education, and any relevant experiences.
 * **Contact Information:** Easy ways for visitors to get in touch with me.
-* **[Potentially other sections based on your content, e.g., Blog, Resume, Services]**
 
 **Getting Started (for developers):**
 
@@ -34,18 +33,14 @@ This website is my initial step into creating an online presence to showcase my 
     ```
 3.  **Open `index.html` in your web browser** to view the basic structure.
 
-**Contributing (if applicable):**
+**Contributing:**
 
 If you have suggestions or would like to contribute to the design or functionality (though this is primarily a personal portfolio), please feel free to open an issue or submit a pull request.
 
 **License:**
 
-[Add your preferred license here, e.g., MIT License]
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/7IronSnow7/MyDigitalCanvas/blob/master/LICENSE) file for details.
 
 **Stay Tuned!**
 
 This project is currently under development. Expect regular updates and improvements as I build my ultimate personal portfolio.
-
----
-
-**Note:** Remember to replace `[repository URL]` and `[repository name]` with the actual details of your GitHub repository. Also, customize the "Key Features" section and add any other relevant information specific to your portfolio. Once your portfolio has more content, you can update this README with more specific details about each section.
